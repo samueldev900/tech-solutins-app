@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/15bc59f810.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <title>Navigation bar</title>
+  </head>
+  <body>
+    <header>
+        <div id="brand"><a href="/">MyCompany</a></div>
+        <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Services</a></li>
+            <li><a href="/about">Projects</a></li>
+            <li><a href="/about">Testimonials</a></li>
+        </ul>
+        </nav>
+        <div class="tel">
+            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+            1234-1234
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    1234-1234
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1">
+
+            <h1>High quality IT-Solutions for help your problems.</h1>
+            <p>Quis eleifend quam adipiscing vitae proin sagittis nisl.</p>
+            <p>Lectus vestibulum mattis.</p>
+            <form action="#">
+                <input type="tel" name="tel" id="itel" maxlength="10">
+                <div class="request">Request Call</div>
+            </form>
+
+            <p>(4,5/5) Rating Star by Clients</p>
+            <i class="fa-solid fa-star" style="color: #ff9900;"></i>
+            <i class="fa-solid fa-star" style="color: #ff9900;"></i>
+            <i class="fa-solid fa-star" style="color: #ff9900;"></i>
+            <i class="fa-solid fa-star" style="color: #ff9900;"></i>
+            <i class="fa-solid fa-star" style="color: #ff9900;"></i>
+            <span style="font-weight: bold; font-size: 0.8rem; padding-left: 20px;">More datails ></span>
+
+            <div id="watch">
+                <div id="circle">
+                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                </div>
+                <p>Watch a video about our business</p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
