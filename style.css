@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --cor0:#ffffff;
     --cor1: #243f5d;
     --cor2:#56adc8;
     --cor3:#ff9900;
+    --cor4:#29282A;
 }
 
 
@@ -19,8 +20,7 @@
 
 body {
   background-color: var(--cor0);
-  color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Istok Web", sans-serif;
 }
 
 header a {
@@ -118,11 +118,18 @@ ul li:hover {
 }
 
 
-section{
+#section1{
     background-color: var(--cor2);
 }
 
 @media only screen and (max-width: 600px) {
+  main{
+    width: 375px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
   header nav {
     display: none;
   }
@@ -135,7 +142,9 @@ section{
   }
 
   #section1{
+    width: 101%;
     padding: 40px;
+    color: #ffffff;
   }
   section h1{
     font-size: 2.0em;
@@ -148,13 +157,13 @@ section{
     border: none;
     border-radius: 25px;
     height: 50px;
-    width: 350px;
+    width: 280px;
     margin-top: 30px;
     padding: 10px 40px;
   }
   .request{
-    position: relative;
-    top: -38px;
+    position: absolute;
+    top: 44.4%;
     left: 50%;
     padding-left: 15px;
     border-left: 1px solid black;
@@ -162,17 +171,13 @@ section{
     color: #000;
     cursor: pointer;
   }
-  
   #circle{
     display: grid;
     place-items: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid white;
-  }
-  #circle i {
-    
   }
 
   .material-symbols-outlined {
@@ -181,6 +186,61 @@ section{
     'wght' 600,
     'GRAD' 0,
     'opsz' 24
+  }
+
+  #watch{
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #watch p{
+    width: 225px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #section2{
+    margin-top: 30px;
+    padding: 40px;
+    color: #000;
+  }
+  .font-blue{
+    width: 150px;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  .list-job{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    height: 315px;
+    margin-top: 50px;
+    padding: 50px 30px;
+    border-top: 5px solid var(--cor2);
+    border-radius: 10px 10px 35% 10px;
+    box-shadow: 0px 0px 10px 6px rgb(252, 244, 244);
+  }
+  .learn-more{
+    font-weight: bold;
+  }
+  
+  .status{
+    width: 210px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+  }
+  .status p{
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--cor4);
+    
   }
 
 
