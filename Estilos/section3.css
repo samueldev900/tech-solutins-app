@@ -1,0 +1,35 @@
+#section3{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 625px 625px;
+    grid-template-rows: 215px 215px;
+  
+    padding: 200px 40px;
+  }
+  #section3 img{
+    margin-top: 20px;
+    width: 493px;
+    height: 430px;
+    grid-column: 2;
+    grid-row: span 3;
+  }
+  #section3 #article1{
+    height: 290px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #section3 article{
+    height: 290px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .plus{
+    margin: 20px 0px;
+    display: flex;
+    align-items: baseline;  
+
+  }
+  .plus i{
+
+    margin-right: 5px;
+  }

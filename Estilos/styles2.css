@@ -24,41 +24,48 @@ body{
   header{
     width: 100%;
   }
-  header nav {
-    display: none;
-  }
 
-  #hamburger-icon {
-    display: block;
-  }
+
+
   .tel{
     display: none;
   }
 
   #section1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    padding: 40px;
+    height: 900px;
+    padding: 40px 40px 40px 160px;
     color: #ffffff;
+    background: url(../imagens/only-circle.png ) no-repeat;
+    background-position: center center;
+    background-size: cover;
+
   }
   section h1{
-    font-size: 2.0em;
+    font-size: 3.2rem;
+   
   }
   #section1 p{
     margin:10px 0px;
-    width: 300px;
+    font-size: 18px;
   }
   #section1 form input {
     border: none;
     border-radius: 25px;
     height: 50px;
-    width: 280px;
+    width: 420px;
     margin-top: 30px;
     padding: 10px 40px;
+    
   }
   #section1 form{
     position: relative;
     height: 100px;
-    width: 280px;
+    width: 420px;
   }
   .request{
     position: absolute;
@@ -100,4 +107,11 @@ body{
     font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  #section1 img{
+
+    width: 700px;
+
+
   }
