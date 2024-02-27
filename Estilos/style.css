@@ -3,7 +3,7 @@
 :root {
     --cor0:#ffffff;
     --cor1: #243f5d;
-    --cor2:rgb(86, 173, 200);
+    --cor2:#56adc8;
     --cor3:#ff9900;
     --cor4:#29282A;
 }
@@ -22,6 +22,11 @@ body {
   background-color: var(--cor0);
   color: var(--cor4);
   font-family: "Istok Web", sans-serif;
+}
+
+
+img{
+  width: 100px;
 }
 
 header a {
