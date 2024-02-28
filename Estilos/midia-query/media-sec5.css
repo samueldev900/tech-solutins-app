@@ -45,6 +45,9 @@
   .description{
     margin-top: 60px;
   }
-
+  #section5 article{
+    display: flex;
+    flex-direction: column;    
+  }
 }
 

@@ -5,8 +5,6 @@
     --cor3:#ff9900;
     --cor4:#29282A;
 }
-
-
 #section2{
     display: grid;
     place-items: center;
@@ -20,9 +18,10 @@
   #section2 article{
     display: grid;
     place-items: center;
-    width: 600px;
+    width: 305px;
     grid-row: 1;
     grid-column: span 4;
+
   }
   #section2 p{
 
