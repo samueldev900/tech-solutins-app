@@ -23,7 +23,7 @@
   }
   .porcentagem p{
     font-size: 13px;
-    width: 150px;
+    width: 3340px;
     margin: 0;
     padding: 0;
 
@@ -53,11 +53,12 @@
   }
   svg{
     position: relative;
-    width: 100px;
+    width: 150px;
     height: 100px;
   }
   #section4 form{
     width: 350px;
+    height: 430px;
     padding: 50px;
     background-color: var(--cor0);
     color: var(--cor4);
@@ -89,6 +90,12 @@
     cursor: pointer;
   }
 
+  #section4 #article-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
 
 }
 

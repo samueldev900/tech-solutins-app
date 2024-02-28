@@ -29,12 +29,12 @@
     align-self: baseline;
 
   }
+
   .font-blue{
     width: 150px;
     color: var(--cor2);
     font-weight: bold;
     font-size: 20px;
-
   }
   .list-job{
     display: flex;

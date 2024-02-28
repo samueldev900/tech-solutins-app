@@ -2,48 +2,9 @@
 
 @media only screen and (max-width: 1200px) {
 
-
-  footer{
-    position: relative;
-    width: 100%;
-    padding: 40px;
-    color: var(--cor0);
-    background-color: var(--cor2);
-  }
-  footer form{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  footer input{
-    border: none;
-    height: 30px;
-    width: 220px;
-    border-radius: 20px;
-    margin: 30px 0;
-    padding: 20px;
-
-  }
-  #icons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-  }
-  ol{
-    list-style-position: inside;
-   list-style: none;
-  }
-  .list{
-    margin-top: 30px;
-  }
-
-  #copy{
-  
-    position: absolute;
-    bottom: 2%;
-  }
-
 #section1{
+  display: grid;
+  grid-template-columns: auto ;
     width: 100%;
     padding: 40px;
     color: #ffffff;
@@ -61,12 +22,19 @@
     height: 50px;
     width: 280px;
     margin-top: 30px;
-    padding: 10px 40px;
+    padding: 10px 20px;
+    font-size: 10px;
   }
   #section1 form{
     position: relative;
     height: 100px;
     width: 280px;
+  }
+
+  #section1 img{
+
+    display: none;
+
   }
   .request{
     position: absolute;

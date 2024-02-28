@@ -3,12 +3,16 @@
 @media only screen and (max-width: 1200px){
 
   #section3{
-    width: 375px;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    padding: 100px 40px;
   }
   #section3 img{
     margin-top: 20px;
-    width: 300px;
+    width: 329px;
+    height: 278px;
   }
   #section3 article{
     height: 290px;

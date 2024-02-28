@@ -10,16 +10,23 @@
     padding: 40px;
     color: #000;
   }
+  #section2 h1{
+    width: 300px;
+  }
   #section2 p{
-
     align-self: baseline;
 
   }
-  .font-blue{
+  #section2 .font-blue{
     width: 150px;
     color: var(--cor2);
     font-weight: bold;
     font-size: 20px;
+    align-self: baseline;
+
+  }
+  #section2 .alinhe-esquerda{
+    width: 300px;
 
   }
   .list-job{
