@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width:365px) and (max-width: 1023px){
 
   #section5{
     display: flex;
@@ -10,7 +10,10 @@
     width: 100%;
 
   }
-  #section5 p,h1{
+  #section5 p{
+    align-self: baseline;
+  }
+  #section5 h1{
     align-self: baseline;
   }
   .feedback{
@@ -50,4 +53,34 @@
     flex-direction: column;    
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
 
+  #section5 > p{
+
+    margin-left: 35px;
+  
+  }
+  #section5 > h1{
+
+    margin-left: 35px;
+  
+  }
+  .feedback{
+    width: 250px;
+  }
+  #section5 article{
+    display: grid;
+    place-items: center;
+  }
+  #simon-robben{
+
+    grid-column: 1/2;
+
+  }
+  
+  #minna-ann{
+
+    grid-column: 2/3;
+
+  }
+}

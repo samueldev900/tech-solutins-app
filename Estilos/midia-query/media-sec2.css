@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width:365px) and (max-width: 1023px){
 
   #section2{
     display: flex;
@@ -11,11 +11,24 @@
     color: #000;
     width: 100%;
   }
-  #section2 h1{
-    width: 300px;
-  }
+
   #section2 p{
     align-self: baseline;
+
+  }
+  #section2 h1{
+
+    width: 300px;
+
+
+
+  }
+  #section2 article
+  {
+
+    width: 100%;
+
+
 
   }
   #section2 .font-blue{

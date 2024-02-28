@@ -1,0 +1,132 @@
+@media only screen and (min-width:365px) and (max-width: 1023px) {
+
+#section7{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 375px;
+  }
+
+  .barra{
+    width: 250px;
+    height: 5px;
+    background-color: lightblue;
+  }
+  .barra div{
+    height: 100%;
+    width: 220px;
+    background-color: var(--cor2);
+  }
+  .progress{
+    margin-top: 30px;
+  }
+  .progress span {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .box-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    width: 295px;
+    height: 170px;
+    text-align: center;
+
+  }
+  .information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 295px;
+    height: 50px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 6px rgb(252, 244, 244);
+
+  }
+  .information i{
+    font-size: 20px;
+    color: #56adc8;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+
+    #section7{
+        display:grid;
+        place-items: center;
+        
+        grid-template-columns: 350px 350px;
+        grid-template-rows: auto auto;
+      
+        column-gap: 50px;
+        padding: 260px 40px;
+      }
+    
+      #section7 #article1 p{
+        font-size: 16px;
+    
+    }
+    
+    #section7 #article2{
+        align-self: baseline;
+        grid-column: 1/2;
+    }
+    .barra{
+    width: 250px;
+    height: 5px;
+    background-color: lightblue;
+  }
+  .barra div{
+    height: 100%;
+    width: 220px;
+    background-color: var(--cor2);
+  }
+  .progress{
+    margin-top: 30px;
+  }
+  .progress span {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .box-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    width: 295px;
+    height: 170px;
+    text-align: center;
+
+  }
+  .information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 295px;
+    height: 50px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 6px rgb(252, 244, 244);
+
+  }
+  .information i{
+    font-size: 20px;
+    color: #56adc8;
+  }
+
+}
+
