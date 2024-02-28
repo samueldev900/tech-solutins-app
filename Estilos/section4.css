@@ -84,7 +84,6 @@ svg{
     color: var(--cor4);
     align-self: center;
     border-radius: 5px;
-
   }
   #section4 form input{
     width: 360px;
@@ -119,5 +118,4 @@ svg{
   grid-template-columns: auto auto;
   grid-column: 2/3;
   grid-row: 2/3;
-
 }
