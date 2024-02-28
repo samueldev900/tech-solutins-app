@@ -75,3 +75,31 @@
 
 }
 
+@media only screen and (min-width:1024px) and (max-width: 1200px){
+
+
+
+  #section2{
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 30px;
+    margin-top: 30px;
+    padding: 200px 40px;
+    color: #000;
+  }
+
+
+  #section2 article{
+    display: grid;
+    place-items: center;
+
+
+    width: 605px;
+    grid-row: 1;
+    grid-column: span 4;
+  }
+
+
+}
