@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1200px){
+
+  #section3{
+    width: 375px;
+    padding: 40px;
+  }
+  #section3 img{
+    margin-top: 20px;
+    width: 300px;
+  }
+  #section3 article{
+    height: 290px;
+  }
+  .plus{
+    margin: 20px 0px;
+    display: flex;
+    align-items: baseline;  
+
+  }
+  .plus i{
+
+    margin-right: 5px;
+  }
+
+
+}
+

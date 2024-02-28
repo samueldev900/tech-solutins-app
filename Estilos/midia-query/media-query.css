@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+@media only screen and (max-width: 1200px) {
+    body{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    main{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    header{
+      width: 100%;
+    }
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+    .tel{
+      display: none;
+    }
+  
+    
+   
+  
+
+
+  
+
+    
+
+   
+
+  }

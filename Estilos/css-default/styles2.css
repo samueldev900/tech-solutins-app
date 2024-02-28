@@ -40,7 +40,7 @@ body{
     height: 900px;
     padding: 40px 40px 40px 160px;
     color: #ffffff;
-    background: url(../imagens/only-circle.png ) no-repeat;
+    background: url(/imagens/only-circle.png) no-repeat;
     background-position: center center;
     background-size: cover;
 

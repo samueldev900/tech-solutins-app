@@ -1,19 +1,13 @@
-footer{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 370px auto auto auto;
-    justify-content: space-around;
+@charset "UTF-8";
+
+@media only screen and (max-width: 1200px) {
+
+  footer{
     position: relative;
     width: 100%;
-    padding: 140px 40px;
+    padding: 40px;
     color: var(--cor0);
     background-color: var(--cor2);
-  }
-  footer article p{
-    width: 200px;
-  }
-  footer div{
-    margin: 0;
   }
   footer form{
     margin-top: 50px;
@@ -43,7 +37,11 @@ footer{
   }
 
   #copy{
+  
     position: absolute;
     bottom: 2%;
   }
+
+
+}
 
