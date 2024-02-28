@@ -1,0 +1,34 @@
+
+#section6{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: auto;
+    column-gap: 90px;
+    padding: 40px;
+  }
+  #section6 article{
+    width: 480px;
+  }
+  #section6 p{
+    margin-top: 30px;
+  }
+  #section6 button{
+    width: 180px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: var(--cor0);
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--cor2);
+  }
+  #section6 img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 570px;
+    margin-top: 40px;
+  }
+
+  
