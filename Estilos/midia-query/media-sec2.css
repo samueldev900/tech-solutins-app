@@ -91,6 +91,7 @@
  
   }
   .list-job:nth-child(5) {
+    /* Estilos para a primeira div com a classe "list-job" */
     grid-row: 4/5;
 
   }
