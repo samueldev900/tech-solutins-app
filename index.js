@@ -17,9 +17,25 @@ window.addEventListener('scroll',()=>{
 
 
         }
-        console.log(heightSection)
+        console.log(heightSection);
     })
 
+
+})
+
+function scrollSection(event){
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const topSection = section.offsetTop;
+    window.scrollTo({
+        top: topSection,
+        behavior:'smooth'
+    });
+}
+links.forEach(link =>{
+
+    link.addEventListener('click',scrollSection);
 
 })
 
