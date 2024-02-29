@@ -35,10 +35,11 @@ header a {
 header {
   padding: 0 20px;
   background-color: var(--cor1);
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 
 #brand {
@@ -52,7 +53,13 @@ nav{
   font-size: 18px;
   font-weight: bold;
 }
-
+.navbar {
+  overflow: hidden;
+  background-color: var(--cor1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 #brand a {
   color: #09c372;
 }
