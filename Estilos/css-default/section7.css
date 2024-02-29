@@ -72,3 +72,19 @@
     font-size: 20px;
     color: #56adc8;
   }
+
+  .arrow-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .arrow-up:hover{
+
+    color: var(--cor1);
+    background-color: var(--cor1);
+
+  }

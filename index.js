@@ -34,3 +34,18 @@ links.forEach(link =>{
 
 })
 
+
+let arrow = document.querySelectorAll('.arrow-up');
+let clicado = false;
+function showUp() {
+    if (!clicado) {
+        arrow[0].style.transform = "rotate(180deg)";
+        console.log('clicou');
+        clicado = true;
+    } else if(clicado) {
+        console.log('já clicado');
+        arrow[0].style.transform = "rotate(0deg)";
+        clicado = false
+    }
+
+}
