@@ -45,12 +45,9 @@
     bottom: 2%;
   }
 
-
-
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px){
-
+@media only screen and (min-width:1024px) and (max-width: 1439px){
 
   footer{
     display: grid;
@@ -58,10 +55,6 @@
     grid-template-columns: auto auto auto  300px;
 
   }
-
-
-
-
 
 }
 
