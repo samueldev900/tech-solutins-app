@@ -37,8 +37,8 @@ header {
   background-color: var(--cor1);
   height: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
 }
 
 #brand {
@@ -46,6 +46,11 @@ header {
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+nav{
+  align-self: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #brand a {
