@@ -48,6 +48,7 @@
   }
   .learn-more{
     font-weight: bold;
+    cursor: pointer;
   }
   
   .status{
@@ -63,4 +64,20 @@
     margin-top: 5px;
     color: var(--cor4);
     
+  }
+
+  .list-job:hover{
+
+    color: var(--cor0);
+    background-color: #56adc8;    
+  }
+
+  .list-job:hover p {
+    color: white;
+  }
+
+  .list-job:hover .learn-more{
+
+    text-decoration: underline;
+
   }
