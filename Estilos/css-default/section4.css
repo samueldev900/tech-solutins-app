@@ -110,6 +110,11 @@ svg{
     cursor: pointer;
     align-self: flex-end;
   }
+  #section4 form button:hover{
+      background-color: var(--cor0);
+      color: var(--cor2);
+      border: 1px solid var(--cor2);
+  }
 #section4 #article1{
 
     grid-column: 2/3;

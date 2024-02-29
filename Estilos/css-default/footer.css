@@ -20,6 +20,8 @@ footer{
     margin: 0;
   }
   footer form{
+    position: relative;
+    width: 400px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -31,6 +33,21 @@ footer{
     margin: 30px 0;
     padding: 20px;
   }
+  footer > form > #circle{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 39%;
+    right: calc(100% - 210px);
+    background-color: var(--cor2);
+    border: none;
+    cursor: pointer;
+  }
+  footer > form > #circle:hover{
+      background-color: var(--cor1);
+      border: 1px solid var(--cor0);
+  }
+
   #icons{
     margin-top: 20px;
     display: flex;
