@@ -98,3 +98,39 @@
 
 }
 
+@media only screen and (min-width:1024px) and (max-width: 1200px){
+
+
+  #section4{
+
+    grid-template-columns: 580px;
+    grid-template-rows: auto 350px auto;
+  
+  }
+
+  #section4 form{
+    
+    grid-row: 3/4;
+    
+  }
+
+  #section4 #article1{
+    width: 530px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #section4 #article-circle{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+
+
+
+
+
+
+
+}
