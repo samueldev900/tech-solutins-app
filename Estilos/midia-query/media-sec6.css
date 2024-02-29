@@ -38,9 +38,9 @@
   #section6{
     display: grid;
     place-items: center;
-  
+    width: 900px;
     justify-content: center;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 450px 450px;
     grid-template-rows: auto;
     column-gap: 0px;
     padding: 40px;
