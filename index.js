@@ -12,12 +12,7 @@ window.addEventListener('scroll',()=>{
         let heightSection = section.offsetHeight;
         let idSection =section.getAttribute('id');
 
-        if(top >= offset && top < offset + heightSection){
 
-
-
-        }
-        console.log(heightSection);
     })
 
 
@@ -27,7 +22,7 @@ function scrollSection(event){
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
-    const topSection = section.offsetTop;
+    const topSection = section.offsetTop - 70;
     window.scrollTo({
         top: topSection,
         behavior:'smooth'
