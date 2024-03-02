@@ -109,6 +109,7 @@ svg{
     font-size: 16px;
     cursor: pointer;
     align-self: flex-end;
+    transition: 0.3s;
   }
   #section4 form button:hover{
       background-color: var(--cor0);

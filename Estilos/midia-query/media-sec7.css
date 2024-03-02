@@ -6,7 +6,13 @@
     padding: 40px;
     width: 375px;
   }
-
+  #section7 #article3{
+    display: grid;
+    height: 510px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .barra{
     width: 250px;
     height: 5px;
@@ -32,7 +38,7 @@
     align-self: center;
     justify-content: space-between;
     width: 295px;
-    height: 170px;
+    height: 100px;
     text-align: center;
 
   }
@@ -53,7 +59,6 @@
   .information i{
     font-size: 20px;
     color: #56adc8;
-    background-color: black;
   }
 
 

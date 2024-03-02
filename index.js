@@ -37,15 +37,57 @@ links.forEach(link =>{
 
 let arrow = document.querySelectorAll('.arrow-up');
 let clicado = false;
+let clicado1 = false;
+let clicado2 = false;
+let textoOculto =  document.querySelectorAll('.hide-text');
+let boxInformation = document.querySelectorAll('.box-information');
 function showUp() {
     if (!clicado) {
         arrow[0].style.transform = "rotate(180deg)";
+        textoOculto[0].style.fontSize = '16px'
+        boxInformation[0].style.height = '170px'
         console.log('clicou');
         clicado = true;
     } else if(clicado) {
         console.log('já clicado');
         arrow[0].style.transform = "rotate(0deg)";
+        textoOculto[0].style.fontSize = '0px'
+        boxInformation[0].style.height = '100px'
         clicado = false
     }
 
 }
+
+function showUp1() {
+    if (!clicado1) {
+        arrow[1].style.transform = "rotate(180deg)";
+        textoOculto[1].style.fontSize = '16px'
+        boxInformation[1].style.height = '170px'
+        console.log('clicou');
+        clicado1 = true;
+    } else if(clicado1) {
+        console.log('já clicado');
+        arrow[1].style.transform = "rotate(0deg)";
+        textoOculto[1].style.fontSize = '0px'
+        boxInformation[1].style.height = '100px'
+        clicado1 = false
+    }
+
+}
+function showUp2() {
+    if (!clicado2) {
+        arrow[2].style.transform = "rotate(180deg)";
+        textoOculto[2].style.fontSize = '16px'
+        boxInformation[2].style.height = '170px'
+        console.log('clicou');
+        clicado2 = true;
+    } else if(clicado2) {
+        console.log('já clicado');
+        arrow[2].style.transform = "rotate(0deg)";
+        textoOculto[2].style.fontSize = '0px'
+        boxInformation[2].style.height = '100px'
+        clicado2 = false
+    }
+
+}
+
