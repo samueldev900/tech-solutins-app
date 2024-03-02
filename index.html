@@ -228,12 +228,13 @@
 
             
             <form action="#">
-                <h3>Consultatiton for free</h4>
-                <p>Posuere morbi leo urna molestie at elementum eu egestas.</p>
-                <input type="name" name="nome" id="inome" placeholder="Your Name">
-                <input type="tel" name="phonenumber" id="iphonenumber" placeholder="Phone Number">
-                <input type="text" name="project" id="iproject" placeholder="Project Category">
-                <button>SEND</button>
+                <h3>Consulta Gratuita</h4>
+                <p>Insira seus dados para podermos entrar em contato</p>
+                <input type="name" name="nome" id="inome" placeholder="Nome e Sobrenome" required min="6">
+                <input type="tel" name="phonenumber" id="iphonenumber" placeholder="DDD + 9 0000-0000" required min="11">
+                <input oninput="validateEmail()" type="email" name="email" id="iemail" placeholder="Insira seu email principal" required>
+                <input type="text" name="project" id="iproject" placeholder="Tipo de Projeto" required>
+                <input type="submit" value="Enviar" name="button" id="button">
             </form>
         </section>
 

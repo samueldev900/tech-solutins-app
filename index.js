@@ -91,3 +91,22 @@ function showUp2() {
 
 }
 
+email = document.getElementById('iemail')
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+function validateEmail(){
+  
+  if(!emailRegex.test(email.value) || email.value === '') {
+
+    email.style.border = '1px solid red'
+    textErro.style.display = 'block'
+    return false
+  }
+  else{
+
+    email.style.border = '1px solid black'
+    textErro.style.display = 'none'
+    localStorage.setItem("iemail", email.value);
+    return true
+  }
+  }
