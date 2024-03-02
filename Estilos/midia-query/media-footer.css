@@ -13,8 +13,13 @@
     background-color: var(--cor2);
   }
   footer form{
+    width: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  footer form p{
+    width: 300px;
   }
   footer input{
     border: none;
