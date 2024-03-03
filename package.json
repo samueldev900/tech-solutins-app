@@ -1,0 +1,22 @@
+{
+  "name": "tech-solutins-app",
+  "version": "1.0.0",
+  "description": "Aplicativo web da Agencia Tech-Solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samueldev900/tech-solutins-app.git"
+  },
+  "author": "Samuel Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samueldev900/tech-solutins-app/issues"
+  },
+  "homepage": "https://github.com/samueldev900/tech-solutins-app#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
