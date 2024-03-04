@@ -1,6 +1,22 @@
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let sections = document.querySelectorAll('.section')
 let links = document.querySelectorAll(".js-link");
 window.addEventListener('scroll',()=>{
