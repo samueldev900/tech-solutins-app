@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (min-width:365px) and (max-width: 1023px) {
+@media only screen and (min-width:1px) and (max-width: 1023px) {
 
   footer{
     display: flex;

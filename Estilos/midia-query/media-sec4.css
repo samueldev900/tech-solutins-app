@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media only screen and (min-width:365px) and (max-width: 1023px){
+@media only screen and (min-width:1px) and (max-width: 1023px){
 
   #section4{
     display: flex;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 265px;
+    width: 340px;
    
     align-self: center;
     position: relative;
@@ -25,14 +25,16 @@
     width: 334px;
     margin: 0;
     padding: 0;
+    margin-left: 10px;
 
   }
-  .porcentagem .number{
+  .porcentagem .number1{
     position: absolute;
     top:40%;
-    left: calc(100% - 230px);
+    left: calc(100% - 272px);
     font-weight: bolder;
     font-size: 16px;
+    margin: 0;
   }
   circle{
     width: 100px;
@@ -57,7 +59,7 @@
   }
   #section4 form{
     width: 350px;
-    height: 430px;
+    height: 500px;
     padding: 50px;
     background-color: var(--cor0);
     color: var(--cor4);

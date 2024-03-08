@@ -74,6 +74,9 @@
     font-size: 20px;
     color: #56adc8;
   }
+  .information p{
+    margin: 0;
+  }
 
   .arrow-up{
     display: flex;

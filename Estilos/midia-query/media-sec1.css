@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (min-width:365px) and (max-width: 1023px) {
+@media only screen and (min-width:1px) and (max-width: 1023px) {
 
 #section1{
     display: grid;
@@ -77,11 +77,11 @@
     text-decoration: underline;
     cursor: pointer;
   }
-  .navbar{
+/*   .navbar{
 
     width: 375px;
 
-  }
+  } */
 
 }
 @media only screen and (min-width:1024px) and (max-width: 1439px){

@@ -34,12 +34,23 @@ header a {
 }
 header {
   padding: 0 20px;
-  background-color: var(--cor1);
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 2;
+  background-color: var(--cor1);
+}
+
+#nav-bootstrap{
+
+  background-color: #243f5d;
+
+}
+
+#logo{
+  width: 300px;
+  height: 50px;
 }
 
 #brand {
@@ -48,7 +59,7 @@ header {
   display: flex;
   align-items: center;
 }
-nav{
+/* nav{
   align-self: center;
   font-size: 18px;
   font-weight: bold;
@@ -59,7 +70,7 @@ nav{
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 #brand a {
   color: #09c372;
 }
@@ -139,5 +150,4 @@ ul li:hover {
 #section1{
     background-color: var(--cor2);
 }
-
 

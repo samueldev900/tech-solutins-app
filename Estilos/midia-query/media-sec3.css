@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
-@media only screen and (min-width:365px) and (max-width: 1023px){
+@media only screen and (min-width:1px) and (max-width: 1023px){
 
   #section3{
     display: flex;
     flex-direction: column;
     width: 300px;
-
-    padding: 100px 40px;
+    
+    padding: 50px 0px;
   }
   #section3 img{
-    margin-top: 20px;
-    width: 329px;
-    height: 278px;
+    margin-top: 60px;
+    width: 296px;
+    height: 250px;
   }
   #section3 article{
     height: 290px;
