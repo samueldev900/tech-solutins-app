@@ -24,7 +24,12 @@ body{
   header{
     width: 100%;
   }
+  #button-wpp{
 
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
 
 
   .tel{

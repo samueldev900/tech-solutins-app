@@ -44,8 +44,20 @@ header {
 }
 
 #logo {
-  width: 300px;
+  width: 200px;
   height: 50px;
+}
+
+.wpp {
+  position: fixed;
+  bottom: 100px; /* Ajuste conforme necessário para a posição vertical desejada */
+  right: 35px; /* Ajuste conforme necessário para a posição horizontal desejada */
+  z-index: 999; /* Coloque-o acima de outros elementos na página, se necessário */
+}
+
+/* Aumente o tamanho do ícone */
+.wpp i {
+  font-size: 3em; /* Ajuste o tamanho conforme necessário */
 }
 
 #brand {
@@ -221,6 +233,12 @@ main {
 
 header {
   width: 100%;
+}
+
+#button-wpp {
+  width: 100px;
+  height: 100px;
+  z-index: 2;
 }
 
 .tel {
@@ -857,6 +875,11 @@ ol {
 #copy {
   position: absolute;
   bottom: 2%;
+}
+
+ol {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 @media only screen and (min-width: 1px) and (max-width: 1023px) {
