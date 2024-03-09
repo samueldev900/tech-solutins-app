@@ -327,6 +327,27 @@ section h1 {
   width: 700px;
 }
 
+#section1 article > button {
+  background-color: var(--cor2);
+  border: none;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 50px;
+  border: 1px solid var(--cor1);
+}
+
+#section1 article > button:hover {
+  background-color: var(--cor1);
+}
+
+#section1 article > button a {
+  text-decoration: none;
+  color: white;
+}
+
 :root {
   --cor0:#ffffff;
   --cor1: #243f5d;
