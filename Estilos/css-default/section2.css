@@ -65,7 +65,10 @@
     color: var(--cor4);
     
   }
+  #list-job4{
+    padding: 30px 30px;
 
+  }
   .list-job:hover{
 
     color: var(--cor0);
