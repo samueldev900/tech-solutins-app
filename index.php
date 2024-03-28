@@ -1,5 +1,10 @@
 <?php 
 require 'lib/vendor/autoload.php';
+
+$dotenv=Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+
+
 $email = new \SendGrid\Mail\Mail();
 $email->setFrom("samueloliveira121@hotmail.com", "Samuel Hotmail");
 $email->setSubject("Sending with Twilio SendGrid is Fun");
