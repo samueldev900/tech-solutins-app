@@ -185,7 +185,7 @@
                 <p>Nossa experiência global nos permite entender e atender às necessidades de uma ampla variedade de clientes.</p>
             </article>
 
-            <form action="#" method="post">
+            <form action="receive.php" method="post">
                 <h3>Consulta Gratuita</h4>
                 <p>Insira seus dados para podermos entrar em contato</p>
                 <input type="name" name="nome" id="inome" placeholder="Nome e Sobrenome" required min="6">
