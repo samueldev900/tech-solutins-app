@@ -27,6 +27,7 @@
         
         <?php 
             require_once "connect.php";
+            
 
             $nome = ucwords(strtolower($_POST['nome'])); // You might want to further validate/sanitize these inputs
             $phonenumber = $_POST['phonenumber'];
@@ -43,33 +44,25 @@
                 $conn->query($sql);
             
                 echo "Inserção bem-sucedida!";
+                //require_once "sendGrid.php";
+                require_once "sendGrid.php";
             } catch (mysqli_sql_exception $exception) {
                 // Verifique se houve um erro relacionado a valores duplicados
                 if ($exception->getCode() === 1062) { // Código de erro 1062 indica valores duplicados
                     echo "<style>#message { display: none; }</style>";
                     echo "<p id='mensage-erro'>$nome, seus dados já estão cadastrados. Aguarde que logo nossa equipe entrará em contato.</p>";
-
                 } else {
                     echo "Erro: " . $exception->getMessage();
                 }
             }
 
+   
+  
+
+
+
         ?>
     </main> 
-    <script>
-
-            var p1 = window.document.getElementById("message");
-            var p2 = window.document.getElementById("mensage-erro");
-
-
-            if (p2.style.display == "block") {
-                p1.style.display = "none"; // Correção aqui
-            }
-
-
-    </script>   
-   
-
     
 </body>
 </html>
