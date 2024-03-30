@@ -7,14 +7,8 @@
 </head>
 <body>
     <?php 
-        require 'lib/vendor/autoload.php';
-        session_start();
+        require 'lib/vendor/autoload.php';   
         // Verificar se os dados $_POST foram armazenados na sessão
-        if(isset($_SESSION['dados_post'])) {
-            $dados_post = $_SESSION['dados_post'];
-        // Use os dados conforme necessário
-        }   
-        
         $dotenv=Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
         $dotenv->load();
 
@@ -30,15 +24,15 @@
                 <table style=\"width: 300px; height: 300px; background-color: lightgray;\">
                     <tr>
                         <td>Nome:</td>
-                        <td>".$dados_post['nome']."</td>
+                        <td>".$_SESSION['nome']."</td>
                     </tr>
                     <tr>
                         <td>Telefone:</td>
-                        <td>".$dados_post['phonenumber']."</td>
+                        <td>".$_SESSION['phonenumber']."</td>
                     </tr>
                     <tr>
                         <td>Email:</td>
-                        <td>".$dados_post['email']."</td>
+                        <td>".$_SESSION['email']."</td>
                     </tr>
                 </table>
             </center>"

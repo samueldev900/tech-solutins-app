@@ -27,7 +27,9 @@
         
         <?php 
             require_once "connect.php";
-            
+            session_start();
+            $_SESSION = $_POST;
+
 
             $nome = ucwords(strtolower($_POST['nome'])); // You might want to further validate/sanitize these inputs
             $phonenumber = $_POST['phonenumber'];
@@ -42,10 +44,8 @@
             try {
                 // Execute a consulta SQL
                 $conn->query($sql);
-            
-                echo "Inserção bem-sucedida!";
-                //require_once "sendGrid.php";
                 require_once "sendGrid.php";
+
             } catch (mysqli_sql_exception $exception) {
                 // Verifique se houve um erro relacionado a valores duplicados
                 if ($exception->getCode() === 1062) { // Código de erro 1062 indica valores duplicados
