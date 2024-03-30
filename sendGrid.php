@@ -19,23 +19,17 @@
         $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
         $email->addContent(
             "text/html", "
-            <center>
-                <h1>Dados do Cliente</h1>
-                <table style=\"width: 300px; height: 300px; background-color: lightgray;\">
-                    <tr>
-                        <td>Nome:</td>
-                        <td>".$_SESSION['nome']."</td>
-                    </tr>
-                    <tr>
-                        <td>Telefone:</td>
-                        <td>".$_SESSION['phonenumber']."</td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>".$_SESSION['email']."</td>
-                    </tr>
-                </table>
-            </center>"
+                <center>
+                    <div style=\"background-color: lightgray; width: 100%; height:500px; padding-top: 100px;\">
+                        <h1>Cliente Solicitando atendimento</h1>
+                        <table style=\"border: 1px solid black; border-collapse: collapse; background-color: white;width: 350px; height: 100px; \">
+                            <caption style=\"font-size: 22px; background-color: gray;\"><strong>Dados do Cliente</strong></caption>
+                            <tr><td style=\"border: 1px solid black;padding: 10px;\">NOME: </td><td style=\"border: 1px solid black;padding: 10px; \">".$_SESSION['nome']."</td></tr>
+                            <tr><td style=\"border: 1px solid black;padding: 10px;\">TELEFONE: </td><td style=\"border: 1px solid black;padding: 10px;\">".$_SESSION['phonenumber']."</td></tr>
+                            <tr><td style=\"border: 1px solid black;padding: 10px;\">EMAIL: </td><td style=\"border: 1px solid black;padding: 10px;\">".$_SESSION['email']."</td></tr>
+                        </table>
+                    </div>
+                </center>"
         );
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         try {
