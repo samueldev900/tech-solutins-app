@@ -29,21 +29,21 @@
             require_once "connect.php";
             session_start();
             $_SESSION = $_POST;
-
-
+            
             $nome = ucwords(strtolower($_POST['nome'])); // You might want to further validate/sanitize these inputs
             $phonenumber = $_POST['phonenumber'];
             $email = $_POST['email'];
             $project = $_POST['project'];
             
             $sql = "USE cadastro";
-
             $conn->query($sql);
 
             $sql = "INSERT INTO cliente (id, nome, telefone, email, tipoProjeto) VALUES (NULL, '$nome', '$phonenumber', '$email', '$project')";
             try {
                 // Execute a consulta SQL
                 $conn->query($sql);
+                $last_id =$conn->insert_id;
+                $_SESSION['last_id'] = $last_id;
                 require_once "sendGrid.php";
 
             } catch (mysqli_sql_exception $exception) {
