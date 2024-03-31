@@ -29,6 +29,11 @@
             require_once "connect.php";
             session_start();
             $_SESSION = $_POST;
+
+            date_default_timezone_set('America/Sao_Paulo');
+            // Obtém a data e hora atuais no formato desejado
+            $dataHoraAtual = date('d/m/Y H:i:s');
+            echo $dataHoraAtual;
             
             $nome = ucwords(strtolower($_POST['nome'])); // You might want to further validate/sanitize these inputs
             $phonenumber = $_POST['phonenumber'];
@@ -38,7 +43,7 @@
             $sql = "USE cadastro";
             $conn->query($sql);
 
-            $sql = "INSERT INTO cliente (id, nome, telefone, email, tipoProjeto) VALUES (NULL, '$nome', '$phonenumber', '$email', '$project')";
+            $sql = "INSERT INTO cliente (id, nome, telefone, email, tipoProjeto,data_insercao) VALUES (NULL, '$nome', '$phonenumber', '$email', '$project', '{$dataHoraAtual}')";
             try {
                 // Execute a consulta SQL
                 $conn->query($sql);

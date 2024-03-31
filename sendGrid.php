@@ -15,7 +15,7 @@
             echo "Erro ao selecionar banco de dados" . $conn->error;
         }
         
-        $sql = "SELECT DATE_FORMAT(data_insercao, '%d/%m/%Y %H:%i:%s')AS data_formatada FROM cliente WHERE id = '{$_SESSION['last_id']}'";
+        $sql = "SELECT data_insercao FROM cliente WHERE id = '{$_SESSION['last_id']}'";
         
         $result = $conn->query($sql);
         if($result === false){
@@ -44,7 +44,7 @@
                             <tr><td style=\"border: 1px solid black;padding: 10px;\">TELEFONE: </td><td style=\"border: 1px solid black;padding: 10px;\">".$_SESSION['phonenumber']."</td></tr>
                             <tr><td style=\"border: 1px solid black;padding: 10px;\">EMAIL: </td><td style=\"border: 1px solid black;padding: 10px;\">".$_SESSION['email']."</td></tr>
                             <tr><td style=\"border: 1px solid black;padding: 10px;\">Tipo de Projeto: </td><td style=\"border: 1px solid black;padding: 10px;\">".$_SESSION['project']."</td></tr>
-                            <tr><td style=\"border: 1px solid black;padding: 10px;\">Data e Hora do Pedido: </td><td style=\"border: 1px solid black;padding: 10px;\">".$row["data_formatada"]."</td></tr>
+                            <tr><td style=\"border: 1px solid black;padding: 10px;\">Data e Hora do Pedido: </td><td style=\"border: 1px solid black;padding: 10px;\">".$row["data_insercao"]."</td></tr>
                         </table>
                     </div>
                 </center>"
