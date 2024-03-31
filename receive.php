@@ -32,9 +32,7 @@
 
             date_default_timezone_set('America/Sao_Paulo');
             // Obtém a data e hora atuais no formato desejado
-            $dataHoraAtual = date('d/m/Y H:i:s');
-            echo $dataHoraAtual;
-            
+            $dataHoraAtual = date('d/m/Y H:i:s');            
             $nome = ucwords(strtolower($_POST['nome'])); // You might want to further validate/sanitize these inputs
             $phonenumber = $_POST['phonenumber'];
             $email = $_POST['email'];
